@@ -1,31 +1,30 @@
 class User{
     constructor(){
+        this.id_user = null,
+        this.username = '',
         this.email = '',
-        this.password = '',
-        this.first_name = '',
-        this.second_name = ''
-    }
-    setemail(){
-        this.email = prompt("email")
+        this.password = ''
     }
 }
 class Project{
     constructor(){
-        this.title = '',
-        this.date = '',
-        this.description = ''
+        this.id_project = null,
+        this.projectname = '',
+        this.description = '',
+        this.startdate = '',
+        this.idcreator = '',
+        this.status = false
+    }
+    completar(){
+        this.status = true
     }
 }
-class CompleteProject extends Project{
+class Task{
     constructor(){
-        super()
-        this.end_date = ''
-    }
-}
-class IncompleteProject extends Project{
-    constructor(){
-        super()
-        this.expiration_date = ''
+        this.id_task = null,
+        this.task_name = '',
+        this.description = '',
+        this.owner = ''
     }
 }
 
