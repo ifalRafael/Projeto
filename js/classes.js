@@ -24,7 +24,14 @@ class Tarefa{
         this.id_tarefa = null,
         this.nome = '',
         this.descricao = '',
-        this.responsavel = ''
+        this.projeto_id
+        this.atribuidauser = '' ,
+        this.datainicio = '',
+        this.datatermino = '',
+        this.status = false
+    }
+    completar(){
+        this.status = true
     }
 }
 
